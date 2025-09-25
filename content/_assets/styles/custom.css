@@ -1,0 +1,10 @@
+.quire-splash .quire-page__header .hero-body .quire-page__header__title {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 5rem 0;
+}
+.quire-copyright .copyright__publisher-logo {
+    height: 6em;
+    max-width: 100%;
+}

@@ -1,0 +1,115 @@
+# ------------------------------------------------------------------------------
+
+# ==============================================================================
+# Publication.yml
+# ------------------------------------------------------------------------------
+#
+# This file houses the bibliographic info and general metadata for your digital
+# publication.
+
+# ------------------------------------------------------------------------------
+# The publication's base URL, i.e. 'https://www.my-publication.org'
+url: 'https://multimedialitysummerschool.github.io/notarieseng/'
+
+# ------------------------------------------------------------------------------
+# Title & Description
+title: Notaries and the Accademia di San Luca, 1590-1630
+subtitle: 
+reading_line:
+short_title:
+
+description:
+  one_line:
+  full: "Much of what we can know about the early decades of the experiment to establish an accademia for artists in Rome we owe to the attention of notaries."
+
+# ------------------------------------------------------------------------------
+# Publication Details
+# ------------------------------------------------------------------------------
+
+pub_date: 2023-10-01 # YYYY-MM-DD
+language: en
+pub_type: other # book | journal-periodical | other
+
+identifier:
+  isbn:
+
+publisher:
+  - name: The Center for Advanced Study in the Visual Arts
+    location: Washington, D.C.
+    url: https://www.nga.gov/research/center
+    logo: The_Center_Lock-up_White.png
+
+# ------------------------------------------------------------------------------
+# Contributors
+# ------------------------------------------------------------------------------
+
+contributor_as_it_appears:
+
+contributor:
+  - id: lnuss
+    type: primary
+    first_name: Laurie
+    last_name: Nussdorfer
+
+# ------------------------------------------------------------------------------
+# Copright & License
+# ------------------------------------------------------------------------------
+
+copyright: © 2025 Center for Advanced Study in the Visual Arts, National Gallery of Art
+
+license:
+  name: Creative Commons Attribution 4.0 International License
+  abbreviation: CC BY
+  url: https://creativecommons.org/licenses/by/4.0/
+  scope: full # full | text-only | some-exceptions
+
+# ------------------------------------------------------------------------------
+# Formats, Resources & Links
+# ------------------------------------------------------------------------------
+
+resource_link:
+  - type: other-format
+    name: PDF
+    media_type: application/pdf
+    link_relation: alternate
+    url: _assets/downloads/NussdorferNotariesandAccademiaSanLuca.pdf
+
+  - type: footer-link
+    name: About
+    link_relation: about
+    url: /about/
+  - type: footer-link
+    name: Privacy Policy
+    link_relation: alternate
+    url: https://www.nga.gov/privacy-policy
+  - type: footer-link
+    name: Terms of Use
+    link_relation: alternate
+    url: https://www.nga.gov/terms-and-notices
+
+# ------------------------------------------------------------------------------
+# Subjects
+# ------------------------------------------------------------------------------
+
+subject:
+  - type: bisac
+    name: ARTISTS ACADEMY / Subjects & Themes / Historical
+    identifer: ART015240
+  - type: keywords
+    name: artists academy, rome, italy
+
+# ------------------------------------------------------------------------------
+# Revision History
+# ------------------------------------------------------------------------------
+
+revision_history:
+  - date:
+    summary:
+
+repository_url:
+
+# ------------------------------------------------------------------------------
+# Promo Image
+# ------------------------------------------------------------------------------
+
+promo_image: Brueghel_1952-G.jpg
