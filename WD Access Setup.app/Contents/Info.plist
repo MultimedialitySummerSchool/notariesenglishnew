@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>13E28</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>WD Access Setup</string>
+	<key>CFBundleIconFile</key>
+	<string>IconWDAccess</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.westerndigital.WDAccess</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>WD Access Setup</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.4.219</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>5B130a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13C64</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0510</string>
+	<key>DTXcodeBuild</key>
+	<string>5B130a</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.8</string>
+	<key>NSAppleScriptEnabled</key>
+	<false/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015 Western Digital Technologies, Inc. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu_WDAccess</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.wdc.WDPrivilegedHelper</key>
+		<string>identifier com.wdc.WDPrivilegedHelper and certificate leaf[subject.CN] = "Developer ID Application: Western Digital Corporation Branded Products Group (WND4K977K3)"</string>
+	</dict>
+	<key>Silent</key>
+	<string>YES</string>
+	<key>ToInstallWDAppManagerVersionString</key>
+	<string>1.0.4.219</string>
+	<key>ToInstallWDSyncServiceVersionString</key>
+	<string>2.0.0.134</string>
+	<key>WDPluginBundleInstall</key>
+	<array>
+		<array>
+			<string>WDAccess.bundle</string>
+			<string>WDQuickViewPrincipalClass</string>
+			<string>1.0.4.219</string>
+		</array>
+	</array>
+	<key>WDPluginBundleInstall - template</key>
+	<array>
+		<array>
+			<string>WDSync.bundle</string>
+			<string>WDLiveFilePrincipalClass</string>
+			<string>2.0.0.134</string>
+		</array>
+		<array>
+			<string>WDQuick-View.bundle</string>
+			<string>WDQuickViewPrincipalClass</string>
+			<string>2.0.0.134</string>
+		</array>
+		<array>
+			<string>PluginFour.bundle</string>
+			<string>WDPluginFourPrincipalClass</string>
+			<string>1.0.0.2</string>
+		</array>
+		<array>
+			<string>PluginThree.bundle</string>
+			<string>WDPluginThreePrincipalClass</string>
+			<string>1.0.0.1</string>
+		</array>
+	</array>
+	<key>WDPluginBundleUninstall</key>
+	<array>
+		<array>
+			<string>WDAccess.bundle</string>
+			<string>WDQuickViewPrincipalClass</string>
+		</array>
+	</array>
+	<key>WDPluginBundleUninstall - template</key>
+	<array>
+		<array>
+			<string>WDQuick-View.bundle</string>
+			<string>WDQuickViewPrincipalClass</string>
+		</array>
+		<array>
+			<string>WDSync.bundle</string>
+			<string>WDLiveFilePrincipalClass</string>
+		</array>
+		<array>
+			<string>PluginThree.bundle</string>
+			<string>WDPluginThreePrincipalClass</string>
+		</array>
+		<array>
+			<string>PluginFour.bundle</string>
+			<string>WDPluginFourPrincipalClass</string>
+		</array>
+	</array>
+</dict>
+</plist>

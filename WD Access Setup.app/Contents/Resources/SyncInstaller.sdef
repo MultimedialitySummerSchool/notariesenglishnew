@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+
+
+	<!-- declare the namespace for using XInclude so we can include the standard suite -->
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+
+
+		<!-- use XInclude to include the standard suite -->
+	<xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+
+
+		<!-- our special scripting suite for this example -->
+	<suite name="WD Sync Installer Suite" code="WDSw"
+		description="WD Security application specific scripting facilities.">
+		
+        
+
+			<!-- we'll define an enumeration
+			that we will use as a value type for storing the selected language in one of our properties.
+			 -->
+		<enumeration name="selectedlanguage" code="SWla">
+			<cocoa name="SelectedLanguage"/>
+			<enumerator name="English" code="Leng" description="English">
+				<cocoa name="English"/>
+			</enumerator>
+			<enumerator name="Spanish" code="Lesn" description="Spanish">
+				<cocoa name="Spanish"/>
+			</enumerator>
+			<enumerator name="French" code="Lfra" description="French">
+				<cocoa name="French"/>
+			</enumerator>
+			<enumerator name="Italian" code="Lita" description="Italian">
+				<cocoa name="Italian"/>
+			</enumerator>
+			<enumerator name="German" code="Ldeu" description="German">
+				<cocoa name="German"/>
+			</enumerator>
+			<enumerator name="Japanese" code="Ljpn" description="Japanese">
+				<cocoa name="Japanese"/>
+			</enumerator>
+			<enumerator name="Korean" code="Lkor" description="Korean">
+				<cocoa name="Korean"/>
+			</enumerator>
+			<enumerator name="Russian" code="Lrus" description="Russian">
+				<cocoa name="Russian"/>
+			</enumerator>
+			<enumerator name="Portuguese" code="Lpor" description="Portuguese">
+				<cocoa name="Portuguese"/>
+			</enumerator>
+			<enumerator name="Traditional Chinese" code="Lcht" description="Traditional Chinese">
+				<cocoa name="TraditionalChinese"/>
+			</enumerator>
+			<enumerator name="Simplified Chinese" code="Lchs" description="Simplified Chinese">
+				<cocoa name="SimplifiedChinese"/>
+			</enumerator>
+			<enumerator name="Czech" code="Lczh" description="Czech">
+				<cocoa name="Czech"/>
+			</enumerator>
+			<enumerator name="Hungarian" code="Lhun" description="Hungarian">
+				<cocoa name="Hungarian"/>
+			</enumerator>
+			<enumerator name="Dutch" code="Ldut" description="Dutch">
+				<cocoa name="Dutch"/>
+			</enumerator>
+			<enumerator name="Norwegian" code="Lnor" description="Norwegian">
+				<cocoa name="Norwegian"/>
+			</enumerator>
+			<enumerator name="Swedish" code="Lswd" description="Swedish">
+				<cocoa name="Swedish"/>
+			</enumerator>
+			<enumerator name="Turkish" code="Ltur" description="Turkish">
+				<cocoa name="Turkish"/>
+			</enumerator>
+			<enumerator name="Polish" code="Lpol" description="Polish">
+				<cocoa name="Polish"/>
+			</enumerator>
+		</enumeration>
+
+
+        
+		
+			<!-- any additions to the application class are done here.  note that
+			we have specified that we inherit all of the properties from the standard
+			application class definition, and we use the same four character code from
+			that definition (see the application class definition above).  -->
+            <class name="application" code="capp" description="Our simple application class." inherits="application">
+			
+				<!-- the name of the Cocoa class where we have provided the
+				various accessor methods for our application class.  -->
+			<cocoa class="NSApplication"/> 
+      
+            <property name="iUnderstandState" code="Siun" type="boolean" access="rw" description="the enabling encryption I-understand checkbox state"/>
+				
+		</class>
+
+	</suite>
+    
+    <!-- specific suite(s) for the application follow... -->
+	<suite name="WD Sync Installer Commands" code="SVrb" description="Terminology for WD Sync Installer.">
+        
+
+
+		<!-- Sync Installer -->
+		<command name="spoof reformat drive offer" code="UTILspro" description="show the reformat offer sheet">
+			<cocoa class="SpoofReformatOffer"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="cancel reformat drive offer" code="UTILcnro" description="close the reformat offer sheet">
+			<cocoa class="CancelReformatOffer"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="spoof reformat drive confirmation" code="UTILsprc" description="show the reformat confirm sheet">
+			<cocoa class="SpoofReformatConfirm"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="cancel reformat drive confirmation" code="UTILcnrc" description="close the reformat confirm sheet">
+			<cocoa class="CancelReformatConfirm"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="spoof install state" code="UTILrgdr" description="set UI to match install state">
+			<cocoa class="SpoofInstallState"/>
+		</command>
+
+		<!-- Sync Installer -->
+         <command name="spoof update state" code="SECRsupd" description="set UI to match update state">
+			<cocoa class="SpoofUpdateState"/>
+		</command>
+
+		<!-- Sync Installer -->
+         <command name="spoof current state" code="SECRtupd" description="set UI to match current state">
+			<cocoa class="SpoofCurrentState"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="spoof uninstall state" code="SECRcupt" description="set UI to match uninstall state">
+			<cocoa class="SpoofUninstallState"/>
+		</command>
+
+
+
+		<!-- Sync Installer -->
+		<command name="save snapshot" code="SWTksnap" description="captures the window image a file">
+			<cocoa class="TakeSnapShot"/>
+			<direct-parameter description="the file path">
+				<type type="text"/>
+			</direct-parameter>
+		</command>
+
+		<!-- Sync Installer -->
+  		<command name="display dialog about" code="SWDial08" description="display the about dialog"> 
+			<cocoa class="DisplayDialogAbout"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="close about box" code="SECRclab" description="close the about box window">
+			<cocoa class="CloseAboutBox"/>
+		</command>
+
+		<!-- Sync Installer -->
+		<command name="do privacy policy" code="SECRdopp" description="tell WD Security to reveal the privacy policy web site">
+			<cocoa class="DoPrivacyPolicy"/>
+		</command>
+
+	</suite>
+
+	
+</dictionary>
