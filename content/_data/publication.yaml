@@ -9,7 +9,7 @@
 
 # ------------------------------------------------------------------------------
 # The publication's base URL, i.e. 'https://www.my-publication.org'
-url: 'https://multimedialitysummerschool.github.io/notarieseng/'
+url: 'https://multimedialitysummerschool.github.io/notariesenglishnew/'
 
 # ------------------------------------------------------------------------------
 # Title & Description
@@ -72,7 +72,7 @@ resource_link:
     name: PDF
     media_type: application/pdf
     link_relation: alternate
-    url: _assets/downloads/NussdorferNotariesandAccademiaSanLuca.pdf
+    url: _assets/downloads/publication.pdf
 
   - type: footer-link
     name: About
